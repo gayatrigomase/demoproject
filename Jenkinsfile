@@ -31,7 +31,7 @@ pipeline {
 		stage('Code RUN') {
         			steps {
         				echo 'Code Running'
-        				sh 'spring-boot:run'
+        				sh 'mvn spring-boot:run'
         				echo 'code packing is done'
         			}
         		}
