@@ -28,5 +28,12 @@ pipeline {
 				echo 'code packing is done'
 			}
 		}
+		stage('Code RUN') {
+        			steps {
+        				echo 'Code Running'
+        				sh 'spring-boot:run'
+        				echo 'code packing is done'
+        			}
+        		}
 	}
 }
