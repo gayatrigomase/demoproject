@@ -28,12 +28,5 @@ pipeline {
 				echo 'code packing is done'
 			}
 		}
-		stage('Code RUN') {
-        			steps {
-        				echo 'Code Running'
-        				sh 'mvn spring-boot:run'
-        				echo 'code packing is done'
-        			}
-        		}
 	}
 }
